@@ -1,0 +1,10 @@
+services:
+  conversor:
+    image: tfg2asircanaveral2024/3.5-convertir-xlsx-a-csv
+    volumes:
+      - type: bind
+        source: ./ficheros-xlsx
+        target: /XLSX
+      - type: bind
+        source: ./ficheros-csv
+        target: /CSV
